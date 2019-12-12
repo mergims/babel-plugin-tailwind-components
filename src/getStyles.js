@@ -37,7 +37,7 @@ export default function getStyles(str, t, state) {
       }
 
       return state.isProd
-        ? stringifyScreen(state.config, mod)
+        ? stringifyScreen(state.config.default, mod)
         : '__computed__' +
             state.tailwindUtilsIdentifier.name +
             '.stringifyScreen(' +
